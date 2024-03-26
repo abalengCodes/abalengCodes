@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+<head id="loginForm">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+
+<head>
+    <title> SEGODI</title>
+
+    <h1> SEGODI (Software Engineering Guidelines for Outsourced Development and Integration) <br>
+     <br>
+     <br>
+         To foster a dynamic marketplace where efficiency, affordability
+         and tailored solutions converge, empowering both consumers and 
+         SMME business owners alike.
+    
+    </h1>
+</head>
+
+<!-- Detailed description of SEGODI Entreprises. -->
+
+    <p id = "description1"> SEGODI is the new and big next thing. Enabling producers and 
+    consumers to easily interact with one another. This platform allows the consumers
+    to charge their own prices for a specified service or product. Producers or providers 
+    of these services have the opportunity to accept, reject and negotiate orders of 
+    the given price. Its a connecting App for any service or product a consumer might 
+    require.     
+    </p>
+    <br>
+    <h3> The following are just a few services that are offered by SEGODI:</h3>
+    
+    <ul> 
+        <li> Barbermen for your hair</li>
+        <li> Restaurants, both small and large Food Entreprises </li>
+        <li> Dry cleaners</li>
+        <li> Cabs services and many<a href="#" style = "color: grey"> more..</a> </li>
+    </ul>
+    <br>
+
+    <p id = "description2">
+
+        SEGODI is an innovative platform revolutionizing how end consumers connect with 
+        product and service providers, akin to the seamless model of Uber. Designed as an 
+        intuititve app, SEGODI serves as the bridge between Small, Medium and Macro Entreprises 
+        (SMMEs) and the demand for their offerings. Here, users effortlessly present their specific  
+        needs or tasks, accompanied by a proposed price for resolution. On the flip side, product
+        or service providers promptly respond to these offers, either accepting or declining based on their
+        capacity and expertise.
+    </p>
+
+    <p id = "SEGODIMotive"> <strong>With SEGODI alongside with you have the luxury to source, order and buy any Service you might require.
+        <strong>
+    </p>
+
+    <h4> THE AIMS AND INTENTIONS OF SEGODI ENTERPRISES: </h4>
+    <ul>
+        <li> Promote small and Medium businesses by giving them the opportunity to source clients through us.</li>
+        <li> Create a convienient enviromnent for the consumers as SEGODI will be delivering services to you, where ever!</li>
+        <li> Allow customers to charge thier preferred price for a particular service and also allow the providers of these <br>
+             to negotiate or accept if they are indeed satisfied with charged price.</li>
+    </ul>
+    <p id = "complaints"> We strive to provide the best customer service there is and for any queries and complaints the customer may have they should fill
+      in the<a href="#" style ="color:red"> Customer complaints form</a> and our <a href = "#" style = "color: blue">Customer complaints handling team</a> will appropiately handle the complaint.</p>
+
+    <div class = "container">
+        <button id="nextbutton" class="nextbtn" onclick="myFunction()"> <strong> Next </strong> </button>
+    </div>
+
+    <style>
+      h1 {
+        font-family:'Courier New', Courier, monospace;
+        color: #000;
+        font-size: 23px;
+        padding: 15px;
+      }
+
+      body {
+        font-size: medium;
+        border: 1px solid green;
+        margin: 10px;
+      }
+
+      p {
+        padding: 16px;
+
+      }
+      #nextbutton {
+        width: 85px;
+      }
+    </style>
+
+    <canvas id = "myCanvas">
+        Your browser does not support the canvas tag.
+    </canvas>
+
+    <!-- A short code for creating transparent rectangles to create aesthetic for the we page. -->
+
+    <script>
+       const c = document.getElementById("myCanvas");
+       const c1 = c.getContext("2d");
+       c1.fillStyle = "red";
+       c1.fillRect(20, 20, 75, 50);
+
+       c1.globalAlpha = "0.2";
+       c1.fillStyle = "purple";
+       c1.fillRect(20, 20, 75, 50);
+       c1.fillRect(50, 50, 75, 50); 
+       c1.fillStyle = "green"; 
+       c1.fillRect(80, 80, 75, 50);
+
+    </script>
+
+    <script>
+      // Get the modal
+      var modal = document.getElementById('id01');
+      
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+      </script>
+</body>
+</html>
